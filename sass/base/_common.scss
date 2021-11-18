@@ -1,0 +1,49 @@
+
+body {
+    background: var(--white-color);
+    /* color: var(--primary-text-color); */
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+  }
+  /* класс для задания сетки - родитель */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--gap) * -1);
+    margin-left: calc(var(--gap) * -1);
+  }
+  /* класс для задания сетки - дети */
+  .grid-item {
+    flex-basis: calc(100% / var(--item) - var(--gap));
+    margin-top: var(--gap);
+    margin-left: var(--gap);
+  }
+
+  .link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* outline: 2px solid tomato; */
+  }
+  .section.half-padding-bottom {
+    padding-bottom: 47px;
+  }
+  .half-padding-top {
+    padding-top: 47px;
+  }
+  // ----цвет 4-й секции-------
+  .item {
+    &:nth-child(4) {
+      background-color: #f5f4fa;
+    }
+  }
+  

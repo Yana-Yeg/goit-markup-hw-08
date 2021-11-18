@@ -1,0 +1,70 @@
+/* ------чистый блок social---------- */
+.social {
+    /* outline: orchid 0.1px solid; */
+    display: flex;
+    justify-content: center;
+
+    width: 206px;
+    height: 44px;
+    padding: 0;
+  }
+  .social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    /* outline: blue 0.1px solid; */
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    // background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+    // fill: #afb1b8;
+    background-color: transparent;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    .social__link:hover &,
+    .social__link:focus & {
+      fill: var(--white-color);
+    }
+  }
+    // /* чтобы при наведении на кружок и мини-иконка тоже меняла цвет */
+    // .social__link:hover .social__icon,
+    // .social__link:focus .social__icon {
+    //   fill: white;
+    // }
+    //------модификаторы для блока team и footer-----
+  .social__link--team {
+    background-color: transparent;
+  }
+  .social__icon--team {
+    fill: #afb1b8;
+  }
+  .social__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .social__icon--footer {
+    fill: var(--white-color);
+  }
