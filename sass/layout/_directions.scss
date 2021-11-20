@@ -1,18 +1,13 @@
-/* обычное решение с заданием каждому елементу */
-/* .directions {
-  display: flex;
-}
-.directions__element {
-  width: 370px;
-  margin-right: 30px;
-}
-.directions__element:last-child {
-  margin-right: 0;
-} */
+  .activity {
+    display: none;
+  }
+    
+  .activity {
+    @media screen and (min-width: 1200px) {
+    display: block;
+    }
+  }
 
-
-/* вариант решения с помощью выноса классов grid */
-/* добавлен класс grid в ul с классом directions*/
   .directions {
     --item:3;
   }
@@ -28,9 +23,6 @@
     bottom: 0;
     left: 0;
     @include font(14px, 1.14, 400, 0.03em);
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 27px 82px;
     color: var(--white-color);

@@ -13,7 +13,13 @@
  /* вариант решения с помощью выноса классов grid */
 /* добавлен класс grid в ul с классом directions*/
 .team-list {
+  --item:1;
+  @media screen and (min-width: 768px) {
+    --item:2;
+  }
+  @media screen and (min-width: 1200px) {
     --item:4;
+  }
   }
   /* общий код на оба варианта решения */
   .team-list__element {
@@ -25,26 +31,35 @@
   .team-list__item {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      }
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    }
+}
   .team-list__names {
     @include font(16px, 1.19, 500, 0.03em);
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.19;
     text-align: center;
   }
   .team-list__jobs {
     margin-top: 10px;
     color: var(--primary-text-color);
     @include font(16px, 1.19, 400, 0.03em);
-    // font-size: 16px;
-    // line-height: 1.19;
     text-align: center;
   }
   /* блок ссылок в team */
   .team-list__social {
+    margin: 16px auto 0 auto;
+
+    @media screen and (min-width: 1200px) {
     margin: 16px 32px 0 32px;
   }
+}
   // .social__link--team {
   //   background-color: transparent;
   //   }

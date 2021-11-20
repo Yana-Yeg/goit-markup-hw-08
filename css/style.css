@@ -1,0 +1,38 @@
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.item {
+    background-color: teal;
+    width: 256px;
+    height: 256px;
+    animation-name: scale;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation-iteration-count: 1; */
+}
+.item:hover{
+    transform: scale(1.05);
+}
+.big {
+    width: 544px;
+    height: 544px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../images/directions/box1.jpg);
+    background-size: cover;
+}
+@keyframes scale {
+    0% {
+        transform: scale(0.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

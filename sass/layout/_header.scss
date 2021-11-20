@@ -1,7 +1,9 @@
 .header {
+    position: relative;
     background-color: var(--white-color);
     border: solid #ececec;
     border-width: 0 0 1px 0;
+    width: 100%;
 }
 
 //main-nav
@@ -12,3 +14,4 @@
   margin-left: auto;
 }
 //connections
+

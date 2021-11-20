@@ -2,6 +2,9 @@
 .nav {
   display: flex;
   align-items: center;
+  //добавила
+  // width: 100%;
+  // justify-content: space-between;
 }
 .site-nav {
   display: flex;
@@ -10,7 +13,14 @@
   margin-right: 50px;
 }
 .site-nav__item:first-child {
+  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
+  }
+
 }
 .site-nav__link {
   display: block;
@@ -19,10 +29,6 @@
   color: var(--header-title-color);
   font-family: inherit;
   @include font(14px, 1.14, 500, 0.02em);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
