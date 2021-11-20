@@ -1,3 +1,8 @@
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   @include font(24px, 1.16, 700);
