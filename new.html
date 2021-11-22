@@ -23,7 +23,7 @@
   <header class="header">
 
 
-    <div class="container main-nav">
+    <!-- <div class="container main-nav">
       <nav class="nav">
         <a href="/index.html" class="logo">
           Web<span class="logo--dark">Studio</span>
@@ -81,19 +81,31 @@
               <a class="social-header__link " href="">LinkedIn</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- <button class="hamburger hamburger--emphatic" type="button">
+    <!-- <button class="hamburger hamburger--emphatic" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button> -->
 
-      </nav>
-    </div>
+    <!-- </nav>
+    </div> -->
+
+
   </header>
 
+
   <main>
+    <picture>
+      <source media="(max-width: 480px)"
+        srcset="./images/overlay/overlay-mob-1x.jpg 1x, ./images/overlay/overlay-mob-2x.jpg 2x" />
+      <source media="(max-width: 768px)"
+        srcset="./images/overlay/overlay-tablet-1x.jpg 1x, ./images/overlay/overlay-tablet-2x.jpg 2x" />
+      <source media="(min-width: 769px)"
+        srcset="./images/overlay/overlay-desktop-1x.jpg 1x, ./images/overlay/overlay-desktop-2x.jpg 2x" />
+      <img src="./images/overlay/overlay-mob-2x.jpg" alt="">
+    </picture>
   </main>
 
 

@@ -77,6 +77,7 @@
     overflow: hidden;
   }
    .project__desctiption {
+     height: 101%;
     position: absolute;
     @include font(18px, 1.56, 400, 0.03em);
     top: 0;

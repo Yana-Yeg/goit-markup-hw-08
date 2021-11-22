@@ -28,15 +28,15 @@
         </a>
       </div>
 
-      <button type="button" class="menu-button " data-modal-open>
+      <button type="button" class="menu-button " data-menu-open>
         <svg width="40" height="40">
           <use href="./images/icons/icons.svg#icon-menu"></use>
         </svg>
       </button>
 
-      <div class="menu-container is-hidden" id="menu-container" data-modal>
+      <div class="menu-container is-hidden" id="menu-container" data-menu>
         <div class="wrapper">
-          <button type="submit" class="menu-close" data-modal-close>
+          <button type="submit" class="menu-close" data-menu-close>
             <svg>
               <use class="icon-cross" href="./images/icons/icons.svg#icon-cross"></use>
             </svg>
@@ -93,6 +93,17 @@
   <main>
 
     <section class="hero">
+
+      <!-- <picture>
+        <source media="(max-width: 480px)"
+          srcset="./images/overlay/overlay-mob-1x.jpg 1x, ./images/overlay/overlay-mob-2x.jpg 2x" />
+        <source media="(max-width: 768px)"
+          srcset="./images/overlay/overlay-tablet-1x.jpg 1x, ./images/overlay/overlay-tablet-2x.jpg 2x" />
+        <source media="(min-width: 769px)"
+          srcset="./images/overlay/overlay-desktop-1x.jpg 1x, ./images/overlay/overlay-desktop-2x.jpg 2x" />
+        <img src="./images/overlay/overlay-mob-2x.jpg" alt="">
+      </picture> -->
+
       <div class="hero__block">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button data-modal-open type="button" class="button hero__button">Заказать услугу</button>
@@ -164,15 +175,27 @@
 
         <ul class="directions list grid">
           <li class="directions__element grid-item">
-            <img src="./images/directions/box1.jpg" alt="ноутбук" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/directions/img1-desktop-1x.jpg 1x,
+              ./images/directions/img1-desktop-2x.jpg 2x">
+              <img src="./images/directions/img1-desktop-1x.jpg" alt="ноутбук" />
+            </picture>
             <p class="directions__hover">Десктопные приложения</p>
           </li>
           <li class="directions__element grid-item">
-            <img src="./images/directions/box2.jpg" alt="смартфон" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/directions/img2-desktop-1x.jpg 1x,
+                        ./images/directions/img2-desktop-2x.jpg 2x">
+              <img src="./images/directions/img2-desktop-1x.jpg" alt="смартфон" />
+            </picture>
             <p class="directions__hover">Мобильные приложения</p>
           </li>
           <li class="directions__element grid-item">
-            <img src="./images/directions/box3.jpg" alt="платншет" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/directions/img3-desktop-1x.jpg 1x,
+                          ./images/directions/img3-desktop-2x.jpg 2x">
+              <img src="./images/directions/img3-desktop-1x.jpg" alt="планшет" />
+            </picture>
             <p class="directions__hover">Дизайнерские решения</p>
           </li>
         </ul>
@@ -187,7 +210,16 @@
 
         <ul class="team-list list grid">
           <li class="team-list__element grid-item">
-            <img src="./images/our-team/img1.jpg" alt="фото1" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/our-team/img1-desktop-1x.jpg 1x,
+                          ./images/our-team/img1-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/our-team/img1-tablet-1x.jpg 1x,
+                          ./images/our-team/img1-tablet-2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="./images/our-team/img1-mob-1x.jpg 1x,
+                          ./images/our-team/img1-mob-2x.jpg 2x">
+              <img src="./images/our-team/img1-mob-1x.jpg" alt="фото1" />
+            </picture>
+
             <div class="team-list__item">
               <h3 class="team-list__names">Игорь Демьяненко</h3>
               <p class="team-list__jobs">Product Designer</p>
@@ -225,7 +257,15 @@
             </div>
           </li>
           <li class="team-list__element grid-item">
-            <img src="./images/our-team/img2.jpg" alt="фото2" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/our-team/img2-desktop-1x.jpg 1x,
+                                      ./images/our-team/img2-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/our-team/img2-tablet-1x.jpg 1x,
+                                      ./images/our-team/img2-tablet-2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="./images/our-team/img2-mob-1x.jpg 1x,
+                                      ./images/our-team/img2-mob-2x.jpg 2x">
+              <img src="./images/our-team/img2-mob-1x.jpg" alt="фото1" />
+            </picture>
             <div class="team-list__item">
               <h3 class="team-list__names">Ольга Репина</h3>
               <p class="team-list__jobs">Frontend Developer</p>
@@ -262,7 +302,15 @@
             </div>
           </li>
           <li class="team-list__element grid-item">
-            <img src="./images/our-team/img3.jpg" alt="фото3" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/our-team/img3-desktop-1x.jpg 1x,
+                                      ./images/our-team/img3-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/our-team/img3-tablet-1x.jpg 1x,
+                                      ./images/our-team/img3-tablet-2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="./images/our-team/img3-mob-1x.jpg 1x,
+                                      ./images/our-team/img3-mob-2x.jpg 2x">
+              <img src="./images/our-team/img3-mob-1x.jpg" alt="фото1" />
+            </picture>
             <div class="team-list__item">
               <h3 class="team-list__names">Николай Тарасов</h3>
               <p class="team-list__jobs">Marketing</p>
@@ -299,7 +347,15 @@
             </div>
           </li>
           <li class="team-list__element grid-item">
-            <img src="./images/our-team/img4.jpg" alt="фото4" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/our-team/img4-desktop-1x.jpg 1x,
+                                      ./images/our-team/img4-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/our-team/img4-tablet-1x.jpg 1x,
+                                      ./images/our-team/img4-tablet-2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="./images/our-team/img4-mob-1x.jpg 1x,
+                                      ./images/our-team/img4-mob-2x.jpg 2x">
+              <img src="./images/our-team/img4-mob-1x.jpg" alt="фото1" />
+            </picture>
             <div class="team-list__item">
               <h3 class="team-list__names">Михаил Ермаков</h3>
               <p class="team-list__jobs">UI Designer</p>
@@ -542,7 +598,7 @@
 
   </div>
 
-  <!-- <script src="./js/menu.js"></script> -->
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 
 
