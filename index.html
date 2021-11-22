@@ -55,35 +55,37 @@
 
           </nav>
 
-          <ul class="connection header--connection list">
-            <li class="connection__item">
-              <a href="mailto:info@devstudio.com" class="connection__link">
-                <svg class="connection__icon connection__icon--letter">
-                  <use href="./images/icons/icons.svg#icon-envelope" width="16" height="12"></use>
-                </svg>info@devstudio.com</a>
-            </li>
-            <li class="connection__item">
-              <a href="tel:+38099111111" class="connection__link">
-                <svg class="connection__icon connection__icon--tel">
-                  <use href="./images/icons/icons.svg#icon-smartphone" width="10" height="16"></use>
-                </svg>+38 099 111 11 11</a>
-            </li>
-          </ul>
+          <div class="wrapp">
+            <ul class="connection header--connection list">
+              <li class="connection__item">
+                <a href="mailto:info@devstudio.com" class="connection__link">
+                  <svg class="connection__icon connection__icon--letter">
+                    <use href="./images/icons/icons.svg#icon-envelope" width="16" height="12"></use>
+                  </svg>info@devstudio.com</a>
+              </li>
+              <li class="connection__item">
+                <a href="tel:+38099111111" class="connection__link">
+                  <svg class="connection__icon connection__icon--tel">
+                    <use href="./images/icons/icons.svg#icon-smartphone" width="10" height="16"></use>
+                  </svg>+38 099 111 11 11</a>
+              </li>
+            </ul>
 
-          <ul class="social-header">
-            <li class="social-header__item">
-              <a class="social-header__link " href="">Instagram</a>
-            </li>
-            <li class="social-header__item">
-              <a class="social-header__link " href="">Twitter</a>
-            </li>
-            <li class="social-header__item">
-              <a class="social-header__link " href="">Facebook</a>
-            </li>
-            <li class="social-header__item">
-              <a class="social-header__link " href="">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="social-header">
+              <li class="social-header__item">
+                <a class="social-header__link " href="">Instagram</a>
+              </li>
+              <li class="social-header__item">
+                <a class="social-header__link " href="">Twitter</a>
+              </li>
+              <li class="social-header__item">
+                <a class="social-header__link " href="">Facebook</a>
+              </li>
+              <li class="social-header__item">
+                <a class="social-header__link " href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -93,16 +95,6 @@
   <main>
 
     <section class="hero">
-
-      <!-- <picture>
-        <source media="(max-width: 480px)"
-          srcset="./images/overlay/overlay-mob-1x.jpg 1x, ./images/overlay/overlay-mob-2x.jpg 2x" />
-        <source media="(max-width: 768px)"
-          srcset="./images/overlay/overlay-tablet-1x.jpg 1x, ./images/overlay/overlay-tablet-2x.jpg 2x" />
-        <source media="(min-width: 769px)"
-          srcset="./images/overlay/overlay-desktop-1x.jpg 1x, ./images/overlay/overlay-desktop-2x.jpg 2x" />
-        <img src="./images/overlay/overlay-mob-2x.jpg" alt="">
-      </picture> -->
 
       <div class="hero__block">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -219,6 +211,15 @@
                           ./images/our-team/img1-mob-2x.jpg 2x">
               <img src="./images/our-team/img1-mob-1x.jpg" alt="фото1" />
             </picture>
+            <!-- // или вариант так
+            <img srcset="./images/our-team/img1-desktop-1x.jpg 270w, 
+                  ./images/our-team/img1-tablet-1x.jpg 354w, 
+                  ./images/our-team/img1-mob-1x.jpg 450w,
+                  ./images/our-team/img1-desktop-2x.jpg 540w,
+                  ./images/our-team/img1-tablet-2x.jpg 708w, 
+                  ./images/our-team/img1-mob-2x.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+              src="./images/our-team/img1-mob-1x.jpg" alt=""> -->
 
             <div class="team-list__item">
               <h3 class="team-list__names">Игорь Демьяненко</h3>

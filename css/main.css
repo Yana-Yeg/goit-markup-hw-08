@@ -188,18 +188,19 @@ body {
 .menu-container {
   display: flex;
   opacity: 1;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    overflow: scroll;
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
+    background-color: var(--white-color);
     text-align: center;
     font-size: 20px;
   }
@@ -220,8 +221,17 @@ body {
 @media screen and (max-width: 767px) {
   .wrapper {
     position: absolute;
-    display: block;
     padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapp {
+    display: flex;
+    width: 100%;
   }
 }
 
@@ -306,7 +316,7 @@ body {
 .site-nav {
   display: block;
   text-align: start;
-  margin-bottom: 302px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -415,7 +425,6 @@ body {
   .connection {
     display: flex;
     margin-top: 0;
-    margin-left: 305px;
   }
 }
 
