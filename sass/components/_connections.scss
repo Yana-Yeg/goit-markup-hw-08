@@ -12,12 +12,14 @@
       margin-bottom: -10px;
       flex-direction: row;
       margin-top: 20px;
+      width: max-content;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
       // margin-left: auto;
       margin-top: 0;
       justify-content: end;
+      width: 100%;
     }
   }
   .connection__item {
